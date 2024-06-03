@@ -9,7 +9,7 @@ import {
 const ShadcnPratice = () => {
   const myArray = [
     {
-      title: "Accordion Item 1",
+      title: "Accordion 1",
       accitem: [
         {
           description:
@@ -18,7 +18,7 @@ const ShadcnPratice = () => {
       ],
     },
     {
-      title: "Accordion Item 2",
+      title: "Accordion 2",
       accitem: [
         {
           description:
@@ -27,7 +27,7 @@ const ShadcnPratice = () => {
       ],
     },
     {
-      title: "Accordion Item 3",
+      title: "Accordion 3",
       accitem: [
         {
           description:
@@ -36,7 +36,7 @@ const ShadcnPratice = () => {
       ],
     },
     {
-      title: "Accordion Item 4",
+      title: "Accordion 4",
       accitem: [
         {
           description:
@@ -45,7 +45,7 @@ const ShadcnPratice = () => {
       ],
     },
     {
-      title: "Accordion Item 5",
+      title: "Accordion 5",
       accitem: [
         {
           description:
@@ -61,10 +61,10 @@ const ShadcnPratice = () => {
         <Accordion type="single" collapsible className="w-full">
           {myArray.map((obj, id) => (
             <AccordionItem key={id} value={`item-${id}`}>
-              <AccordionTrigger className="text-white font-bold list-none decoration-transparent text-2xl">
+              <AccordionTrigger className="text-white font-medium list-none decoration-transparent text-3xl">
                 {obj.title}
               </AccordionTrigger>
-              <AccordionContent className="text-white text-base font-normal">
+              <AccordionContent className="text-white max-w-[950px] opacity-[70%] text-base font-normal">
                 {obj.accitem.map((item, index) => (
                   <p key={index}>{item.description}</p>
                 ))}
